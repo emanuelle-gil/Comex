@@ -1,0 +1,14 @@
+C:\Users\manug\Documents\Comex\bin\Debug\net8.0\Comex.exe
+C:\Users\manug\Documents\Comex\bin\Debug\net8.0\Comex.deps.json
+C:\Users\manug\Documents\Comex\bin\Debug\net8.0\Comex.runtimeconfig.json
+C:\Users\manug\Documents\Comex\bin\Debug\net8.0\Comex.dll
+C:\Users\manug\Documents\Comex\bin\Debug\net8.0\Comex.pdb
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.AssemblyInfoInputs.cache
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.AssemblyInfo.cs
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.csproj.CoreCompileInputs.cache
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.dll
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\refint\Comex.dll
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.pdb
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.genruntimeconfig.cache
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\ref\Comex.dll
