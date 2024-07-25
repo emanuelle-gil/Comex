@@ -1,5 +1,6 @@
-﻿string boasVindas = "Boas vindas ao Comex!!";
-List<string> produtos = new List<string>();
+﻿using Comex;
+string boasVindas = "Boas vindas ao Comex!!";
+List<Produto> produtos = new List<Produto>();
 
 void LogoComex()
 {
@@ -20,10 +21,9 @@ void MenuComex()
     Console.WriteLine("Digite 2 para listar produtos");
     Console.WriteLine("Digite -1 para sair");
     Console.Write("\nDigite a sua opção: ");
-    string opcaoEscolhida = Console.ReadLine()!;
-    int opcaoEscolhidaOk = int.Parse(opcaoEscolhida);
+    int opcaoEscolhida = int.Parse(Console.ReadLine()!);
 
-    switch(opcaoEscolhidaOk)
+    switch(opcaoEscolhida)
     {
         case 1: CriarProduto();
             break;
@@ -44,9 +44,25 @@ void CriarProduto()
     Console.Clear();
     Console.WriteLine("Registro de produtos");
     Console.Write("\nDigite o nome do produto que você deseja adicionar: ");
-    string novoProduto = Console.ReadLine()!;
-    produtos.Add(novoProduto);
-    Console.WriteLine($"\nO produto {novoProduto} foi registrado com sucesso!");
+    string nomeProduto = Console.ReadLine()!;
+
+    Console.Write("Digite a descrição do produto que você deseja adicionar: ");
+    string descricaoProduto = Console.ReadLine()!;
+
+    Console.Write("Digite o valor unitario do produto que você deseja adicionar: ");
+    double valorProduto = double.Parse(Console.ReadLine()!);
+
+    Console.Write("Digite a quantidade do produto que você deseja adicionar: ");
+    int qtdProduto = int.Parse(Console.ReadLine()!);
+
+    Produto produto = new Produto(nomeProduto);
+    produto.Nome = nomeProduto;
+    produto.Descricao = descricaoProduto;
+    produto.PrecoUnitario = valorProduto;
+    produto.Quantidade = qtdProduto;
+
+    produtos.Add(produto);
+    Console.WriteLine($"\nO produto {nomeProduto} foi registrado com sucesso!");
     Thread.Sleep(2000);
     Console.Clear();
     MenuComex();
@@ -56,15 +72,29 @@ void CriarProduto()
 void ListarProdutos()
 {
     Console.Clear();
-    Console.WriteLine("Exibindo todos os produtos registrados\n");
-    foreach(string produto in produtos)
+    if (produtos.Count > 0)
     {
-        Console.WriteLine($"Produto: {produto}");
+        Console.WriteLine("Exibindo todos os produtos registrados\n");
+        foreach (Produto produto in produtos)
+        {
+            Console.WriteLine($"Produto: {produto.Nome}");
+            Console.WriteLine($"Descrição: {produto.Descricao}");
+            Console.WriteLine($"Valor Unitario: {produto.PrecoUnitario}");
+            Console.WriteLine($"Quantidade: {produto.Quantidade}\n");
+        }
+        Console.Write("\nDigite qualquer tecla para voltar ao menu");
+        Console.ReadKey();
+        Console.Clear();
+        MenuComex();
     }
-    Console.Write("\nDigite qualquer tecla para voltar ao menu");
-    Console.ReadKey();
-    Console.Clear();
-    MenuComex();
+    else
+    {
+        Console.WriteLine("Nenhum produto cadastrado, cadastre um produto e tente novamente!");
+        Console.Write("\nDigite qualquer tecla para voltar ao menu");
+        Console.ReadKey();
+        Console.Clear();
+        MenuComex();
+    }
 }
 
 MenuComex();
