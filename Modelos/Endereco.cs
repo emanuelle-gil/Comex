@@ -1,4 +1,4 @@
-namespace Comex;
+namespace Comex.Modelos;
 
 internal class Endereco
 {

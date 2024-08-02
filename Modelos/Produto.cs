@@ -1,4 +1,4 @@
-namespace Comex;
+namespace Comex.Modelos;
 
 internal class Produto
 {
@@ -6,6 +6,7 @@ internal class Produto
     {
         Nome = nome;
     }
+
     public string Nome { get; set; }
     public string Descricao { get; set; }
     public double PrecoUnitario { get; set; }
