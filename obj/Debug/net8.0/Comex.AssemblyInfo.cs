@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Comex")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1282f81d92f0d08bc8bf06b7a301ecc866d31aae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6dbe3f95b6f2b43543f48ec68bc7c3a7de2558b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Comex")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Comex")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

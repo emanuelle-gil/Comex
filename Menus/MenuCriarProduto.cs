@@ -1,7 +1,7 @@
 using Comex.Modelos;
 namespace Comex.Menus;
 
-internal class MenuCriarProdutos : Menu
+public class MenuCriarProdutos : Menu
 {
     public override void Executar(List<Produto> produtos)
     {

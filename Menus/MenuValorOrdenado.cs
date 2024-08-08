@@ -1,20 +1,19 @@
-namespace Comex.Menus;
 using Comex.Modelos;
+using Microsoft.VisualBasic;
+namespace Comex.Menus;
 
-public class MenuListarProdutos : Menu
+internal class MenuValorOrdenado : Menu
 {
     public override void Executar(List<Produto> produtos)
     {
         base.Executar(produtos);
         if (produtos.Count > 0)
         {
-            Console.WriteLine("Exibindo todos os produtos registrados\n");
-            foreach (Produto produto in produtos)
+            var valoresOrdenados = produtos.OrderBy(produto => produto.PrecoUnitario).ToList();
+            Console.WriteLine("Lista de produtos ordenados por preço:");
+            foreach (var produto in valoresOrdenados)
             {
-                Console.WriteLine($"Produto: {produto.Nome}");
-                Console.WriteLine($"Descricao: {produto.Descricao}");
-                Console.WriteLine($"Valor Unitario: {produto.PrecoUnitario}");
-                Console.WriteLine($"Quantidade: {produto.Quantidade}\n");
+                Console.WriteLine($"{produto.Nome} - {produto.PrecoUnitario}");
             }
             Console.Write("\nDigite qualquer tecla para voltar ao menu");
             Console.ReadKey();
@@ -28,5 +27,4 @@ public class MenuListarProdutos : Menu
             Console.Clear();
         }
     }
-    
 }
