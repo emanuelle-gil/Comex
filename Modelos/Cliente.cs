@@ -1,6 +1,6 @@
 namespace Comex.Modelos;
 
-internal class Cliente : IIdentificar
+public class Cliente : IIdentificar
 {
     public string Nome { get; set; }
     public string CPF { get; set; }

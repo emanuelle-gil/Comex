@@ -8,7 +8,7 @@ public class MenuListarProdutos : Menu
         base.Executar(produtos);
         if (produtos.Count > 0)
         {
-            Console.WriteLine("Exibindo todos os produtos registrados\n");
+            Console.WriteLine("Lista de produtos disponíveis:\n");
             foreach (Produto produto in produtos)
             {
                 Console.WriteLine($"Produto: {produto.Nome}");
