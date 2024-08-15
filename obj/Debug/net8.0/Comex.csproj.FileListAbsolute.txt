@@ -12,3 +12,4 @@ C:\Users\manug\Documents\Comex\obj\Debug\net8.0\refint\Comex.dll
 C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.pdb
 C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.genruntimeconfig.cache
 C:\Users\manug\Documents\Comex\obj\Debug\net8.0\ref\Comex.dll
+C:\Users\manug\Documents\Comex\obj\Debug\net8.0\Comex.sourcelink.json
